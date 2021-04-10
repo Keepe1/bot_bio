@@ -38,4 +38,4 @@ if not os.system(zip_command):
 	print('Резервная копия успешно создана в', target)
 else:
 	print('Создание резервной копии НЕ УДАЛОСЬ')
-
+print('sosi')
