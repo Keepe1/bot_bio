@@ -2,8 +2,10 @@ import os
 import time
 import shutil
 
+
 # 1. Файлы и каталоги, которые необходимо скопировать, собираются в список.
-source = ['D:\\file', 'D:\\hgh']
+source_1 = list(map(str, input('Введите путь для папки с копируемыми фалами  - ').split( '\ ' )))
+source = str("\\".join(source_1))
 # Заметьте, что для имён, содержащих пробелы, необходимо использовать
 # двойные кавычки внутри строки.
 
@@ -20,22 +22,21 @@ now = time.strftime('%H.%M.%S')
 # Запрашиваем комментарий пользователя для имени файла
 comment = input('Введите комментарий -->')
 if len(comment) == 0:# проверяем, введён ли комментарий
-	target = today + os.sep  + now + '.zip'
+	target = today + os.sep  + now
 else:
 	target = today + os.sep + now + '_' +\
-	comment.replace(' ','_') + '.zip'
+	comment.replace(' ','_')
 
 # Создаём каталог, если его ещё нет
 if not os.path.exists(today):
 	os.mkdir(today)# создание каталога
 print('Каталог успешно создан', today)
  
-# 5. Используем команду "zip" для помещения файлов в zip-архив
-zip_command = "zip -qr {0} {1}".format(target,' '.join(source))
+
+shutil.make_archive(target, 'zip', source)
 
 # Запускаем создание резервной копии
-if not os.system(zip_command):
+if os.path.exists(target) == False :
 	print('Резервная копия успешно создана в', target)
 else:
 	print('Создание резервной копии НЕ УДАЛОСЬ')
-print('sosi')
