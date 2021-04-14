@@ -11,7 +11,7 @@ def TRNK(x):
         x = 'G'
         return x
     if x == 'G':
-        x == 'C'
+        x = 'C'
         return x
 
 
