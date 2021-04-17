@@ -1,5 +1,7 @@
-def iRNK(x):
-    x = str(x)
+
+# Функция перевода нуклеотидов
+def iRNK(nukl):
+    x = str(nukl)
     if x == 'A' or x == 'a': 
         b.append('U')
 
@@ -18,18 +20,28 @@ def iRNK(x):
     else:
         print('error')
 
-def AMIN(x):
-    x = str(x)
-    if x == 'UUU' or x == 'UUC': 
-        amin.append('phenylalanine')
-    if x == 'UUA'or x == 'UUG' or x == 'CUU'\
-    or x == 'CUC' or x == 'CUA' or x == 'CUG':
-        amin.append('leucine') 
 
-#сама зацикленная программа
+# функция превода в аминокислоты
+def AMIN(aleli):
+
+    a = str(aleli)
+
+    if a == 'UUU' or a == 'UUC':
+        amin.append('phenylalanine')
+
+    if a == 'UUA' or a == 'UUG' or a == 'CUU'\
+    or a == 'CUC' or a == 'CUA' or a == 'CUG':
+        amin.append('leucine')
+
+    if a == 'UCU' or a == 'UCC' or a == 'UCA'\
+    or a == 'UCG':
+        amin.append('serine')
+
+
+# сама зацикленная программа
 while True:
 
-    question = input('Для начала работы введите комманду - /start \nДля завершения работы введите комманду - /end:\n') 
+    question = input('Для начала работы введите комманду - /start \nДля завершения работы введите комманду - /end:\n')
     
     #проверки на выполнение программы
     if question == "/start":
