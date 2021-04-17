@@ -21,6 +21,7 @@ def iRNK(nukl):
         print('?')
 
 
+
 # функция превода в аминокислоты
 def AMIN(aleli):
 
