@@ -18,7 +18,7 @@ def iRNK(nukl):
         b.append('-')
 
     else:
-        print('error')
+        print('?')
 
 
 # функция превода в аминокислоты
