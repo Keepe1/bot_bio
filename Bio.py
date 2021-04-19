@@ -48,7 +48,8 @@ def AMIN(aleli):
         amin.append('histidine')
     elif a == 'CAA' or a == 'CAG':
         amin.append('glumatin')
-    elif a == 'CGU' or a == 'CGC' or a == 'CGA' or a == 'CGG':
+    elif a == 'CGU' or a == 'CGC' or a == 'CGA' or a == 'CGG'\
+    or a == 'AGA' or a == 'AGG':
         amin.append('arginine')
     elif a == 'AUC' or a == 'AUU' or a == 'AUA':
         amin.append('isoleucine')
@@ -56,8 +57,22 @@ def AMIN(aleli):
         amin.append('methionine')
     elif a == 'ACU' or a == 'ACC' or a == 'ACA' or a == 'ACG':
         amin.append('threonine')
-
-
+    elif a == 'AAU' or a == 'AAC':
+        amin.append('asparagine')
+    elif a == 'AAA' or a == 'AAG':
+        amin.append('lysine')
+    elif a == 'AGU' or a == 'AGC':
+        amin.append('serine')
+    elif a == 'GUU' or a == 'GUA' or a == 'GUC' or a == 'GUG':
+        amin.append('valine')
+    elif a == 'GCU' or a == 'GCC' or a == 'GCA' or a == 'GCG':
+        amin.append('alanine')
+    elif a == 'GAU' or a == 'GAC':
+        amin.append('aspartic acid')
+    elif a == 'GAA' or a == 'GAG':
+        amin.append('glutamic acid')
+    elif a == 'GGU' or a == 'GGA' or a == 'GGC' or a == 'GGG':
+        amin.append('glycine')
 
 
 # сама зацикленная программа
