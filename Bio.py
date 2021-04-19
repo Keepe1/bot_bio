@@ -29,14 +29,35 @@ def AMIN(aleli):
 
     if a == 'UUU' or a == 'UUC':
         amin.append('phenylalanine')
-
-    if a == 'UUA' or a == 'UUG' or a == 'CUU'\
+    elif a == 'UUA' or a == 'UUG' or a == 'CUU'\
     or a == 'CUC' or a == 'CUA' or a == 'CUG':
         amin.append('leucine')
-
-    if a == 'UCU' or a == 'UCC' or a == 'UCA'\
-    or a == 'UCG':
+    elif a == 'UCU' or a == 'UCC' or a == 'UCA' or a == 'UCG':
         amin.append('serine')
+    elif a == 'UAU' or a == 'UAC':
+        amin.append('tyrosine')
+    elif a == 'UAA' or a == 'UAG' or a == 'UGA':
+        amin.append('stop-kodon')
+    elif a == 'UAU' or a == 'UAC':
+        amin.append('cysteine')
+    elif a == 'UGG':
+        amin.append('tryptophan')
+    elif a == 'CCU' or a == 'CCC' or a == 'CCA' or a == 'CCG':
+        amin.append('proline')
+    elif a == 'CAU' or a == 'CAC':
+        amin.append('histidine')
+    elif a == 'CAA' or a == 'CAG':
+        amin.append('glumatin')
+    elif a == 'CGU' or a == 'CGC' or a == 'CGA' or a == 'CGG':
+        amin.append('arginine')
+    elif a == 'AUC' or a == 'AUU' or a == 'AUA':
+        amin.append('isoleucine')
+    elif a == 'AUG':
+        amin.append('methionine')
+    elif a == 'ACU' or a == 'ACC' or a == 'ACA' or a == 'ACG':
+        amin.append('threonine')
+
+
 
 
 # сама зацикленная программа
@@ -68,7 +89,6 @@ while True:
                     
                     #создание списка триплетов
                     n = f.split('-')
-                    print(n)
                     
                     amin = []#список для функции превода нуклеотидов ирнк в кислоты
 
