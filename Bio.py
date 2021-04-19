@@ -112,6 +112,7 @@ while True:
 
                     final_acid = []
                     find_stop_codon(amin)
+                    print(final_acid)
 
 
             else:
