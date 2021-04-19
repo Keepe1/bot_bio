@@ -4,22 +4,16 @@ def iRNK(nukl):
     x = str(nukl)
     if x == 'A' or x == 'a': 
         b.append('U')
-
     elif x == 'T' or x == 't':
         b.append('A')
-
     elif x == 'C' or x == 'c':
         b.append('G')
-
     elif x == 'G' or x == 'g':
         b.append('C')
-
     elif x == '-':
         b.append('-')
-
     else:
         print('?')
-
 
 
 # функция превода в аминокислоты
@@ -37,7 +31,7 @@ def AMIN(aleli):
     elif a == 'UAU' or a == 'UAC':
         amin.append('tyrosine')
     elif a == 'UAA' or a == 'UAG' or a == 'UGA':
-        amin.append('stop-kodon')
+        amin.append('stop-codon')
     elif a == 'UAU' or a == 'UAC':
         amin.append('cysteine')
     elif a == 'UGG':
@@ -75,9 +69,16 @@ def AMIN(aleli):
         amin.append('glycine')
 
 
+def find_stop_codon(acid):
+    for i in acid:
+        if i == 'stop-codon':
+            break
+        else:
+            final_acid.append(i)
+
+
 # сама зацикленная программа
 while True:
-
     question = input('Для начала работы введите комманду - /start \nДля завершения работы введите комманду - /end:\n')
     
     #проверки на выполнение программы
@@ -108,7 +109,10 @@ while True:
                     amin = []#список для функции превода нуклеотидов ирнк в кислоты
 
                     three_operator = list(map(AMIN, n))#перевод днк в иРНК
-                    print(amin)
+
+                    final_acid = []
+                    find_stop_codon(amin)
+
 
             else:
                 print('Введено не верное значение')
