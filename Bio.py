@@ -1,10 +1,9 @@
-
 # Функция перевода нуклеотидов
 def iRNK(nukl):
     x = str(nukl)
     if x == 'A' or x == 'a': 
         b.append('U')
-    elif x == 'T' or x == 't':
+    elif x == 'T' or x == 't' or x == 'U' or x == 'u':
         b.append('A')
     elif x == 'C' or x == 'c':
         b.append('G')
@@ -92,7 +91,7 @@ while True:
             if a == 'DNK' or a == 'dnk':
                 
                 #ввод данных
-                dnk = list(input('Введите 5 алелей ДНК (через "-"):\n'))
+                dnk = list(input('Введите алели ДНК (через "-"):\n'))
                 b = []#список для функции превода днк в ирнк
                 
                 second_operator = list(map(iRNK, dnk))#перевод днк в иРНК 
@@ -113,6 +112,32 @@ while True:
                     final_acid = []
                     find_stop_codon(amin)
                     print(final_acid)
+                
+            if a == 'tRNK' or a == 'trnk':
+            
+                #ввод данных
+                trnk = list(input('Введите алели тРНК (через "-"):\n'))
+                b = []#список для функции превода днк в ирнк
+                
+                second_operator = list(map(iRNK, trnk))#перевод днк в иРНК 
+                f = (''.join(b))#создание str строки из списка
+                print(f)
+                
+                j = input('Переводим нуклеотиды?:\n' )
+
+                if j == 'Y':
+                    
+                    #создание списка триплетов
+                    n = f.split('-')
+                    
+                    amin = []#список для функции превода нуклеотидов ирнк в кислоты
+
+                    three_operator = list(map(AMIN, n))#перевод днк в иРНК
+
+                    final_acid = []
+                    find_stop_codon(amin)
+                    print(final_acid)
+
 
 
             else:
