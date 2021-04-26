@@ -11,12 +11,13 @@ reply_markup=menu)
 
 @dp.message_handler(text="DNK")
 async def show_dnk(message: Message):
-	await message.answer('Вы выбрали Днк\nведите цепь Днк через: "-"\n(Нуклеотиды: A, T, C, G',
+	await message.answer('Вы выбрали Днк\nведите цепь Днк через: "-"\n(Нуклеотиды: A, T, C, G)',
 reply_markup=ReplyKeyboardRemove())
 	
-	@dp.message_handler(content_types=["text"])
+	@dp.message_handler()
 	async def dnk_priom(message: Text):
-		await message.answer(a = DNK.final(message))
+		await message.answer(DNK.final(message.text))
+		await message.answer(DNK(message.text))
 
 
 @dp.message_handler(text="TRNK")

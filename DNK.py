@@ -1,5 +1,5 @@
 class dnk:
-	# Функция перевода нуклеотидов в ирнк(работает с трнк и с днк)
+  # Функция перевода нуклеотидов в ирнк(работает с трнк и с днк)
 	def iRNK(self, nukl):
 	    x = str(nukl)
 	    if x == 'A' or x == 'a': 
@@ -72,7 +72,7 @@ class dnk:
 	def find_stop_codon(self, acid):
 	    for i in acid:
 	        if i == 'stop-codon':
-	            irnkreak
+	            break
 	        else:
 	            final_acid.append(i)
 
@@ -106,6 +106,6 @@ def final(nukl):
 	DNK = str(''.join(dnk))
 	ACID = str(', '.join(final_acid))
 
-	finish=('Ваша ДНК цепь: {0} \nВаша цепь иРНК: {1} \nВаша цепь аминокислот: {2}'.format(DNK, irnk_str, ACID))
+	finish=('Ваша ДНК цепь: {0} \nВаша цепь иРНК: {1} \nВаша цепь аминокислот: {2}'.format(DNK, irnk, ACID))
 	finish_out=finish
 	return finish_out
