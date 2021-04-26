@@ -1,4 +1,4 @@
-class dnk:
+class trnk:
   # Функция перевода нуклеотидов в ирнк(работает с трнк и с днк)
 	def iRNK(self, nukl):
 	    x = str(nukl)
@@ -76,17 +76,17 @@ class dnk:
 	        else:
 	            final_acid.append(i)
 
-d = dnk()
+t = trnk()
 irnk = []
 amin = []
 final_acid = []
 
 def final(nukl):
-	dnk = list(nukl)
+	tRNK = list(nukl)
 	
 	#список для функции превода днк в ирнк
 	
-	second_operator = list(map(d.iRNK, dnk))
+	second_operator = list(map(t.iRNK, tRNK))
 	#перевод днк в иРНК 
 
 	irnk_str = str(''.join(irnk))
@@ -98,15 +98,15 @@ def final(nukl):
 	
 	#список для функции превода нуклеотидов ирнк в кислоты
 
-	three_operator = list(map(d.AMIN, irnk_list))
+	three_operator = list(map(t.AMIN, irnk_list))
 	#перевод днк в иРНК
 
 	
-	d.find_stop_codon(amin)
-	DNK = str(''.join(dnk))
+	t.find_stop_codon(amin)
+	TRNK = str(''.join(tRNK))
 	ACID = str(', '.join(final_acid))
 
-	finish=('Ваша ДНК цепь: {0} \nВаша цепь иРНК: {1} \nВаша цепь аминокислот: {2}'.format(DNK, irnk_str, ACID))
+	finish=('Ваша тРНК цепь: {0} \nВаша цепь иРНК: {1} \nВаша цепь аминокислот: {2}'.format(TRNK, irnk_str, ACID))
 	finish_out=finish
 	if len(finish) > 0 :
 		del irnk[:]

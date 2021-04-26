@@ -3,6 +3,7 @@ from aiogram.types import Message, ReplyKeyboardRemove
 from keyboards.default import menu
 from aiogram.dispatcher.filters import Command, Text
 import DNK
+import TRNK
 
 @dp.message_handler(Command('menu'))
 async def show_menu(message: Message):
@@ -13,14 +14,17 @@ reply_markup=menu)
 async def show_dnk(message: Message):
 	await message.answer('Вы выбрали Днк\nведите цепь Днк через: "-"\n(Нуклеотиды: A, T, C, G)',
 reply_markup=ReplyKeyboardRemove())
-	
-	@dp.message_handler()
-	async def dnk_priom(message: Text):
-		await message.answer(DNK.final(message.text))
-		await message.answer(DNK(message.text))
+	if message.text == 'DNK':
+		@dp.message_handler()
+		async def dnk_priom(message: Text):
+			await message.answer(DNK.final(message.text))
 
 
 @dp.message_handler(text="TRNK")
 async def show_trnk(message: Message):
 	await message.answer("Вы выбрали TRNK",
 reply_markup=ReplyKeyboardRemove())
+	if message.text == 'TRNK':
+		@dp.message_handler()
+		async def trnk_priom(message: Text):
+			await message.answer(TRNK.final(message.text))
