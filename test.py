@@ -1,16 +1,10 @@
-import DNK
+import perevod as per
 
-H = input()
+g = input('type')
+h = input('nukl')
 
-g=DNK.final(H)
-print(g)
+per.func(g)
 
-x=50
-def func():
-	global x
-	
-	print('x равно',x)
-	x=2
-	print('Заменяем глобальное значение x на',x)
-func()
-print('Значение x составляет', x)
+b = per.p.final(h)
+
+print(b)
