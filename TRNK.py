@@ -72,7 +72,7 @@ class trnk:
 	def find_stop_codon(self, acid):
 	    for i in acid:
 	        if i == 'stop-codon':
-	            break
+	          	break
 	        else:
 	            final_acid.append(i)
 

@@ -1,2 +1,1 @@
-aiogram~=2.12
-environs~=8.0.0
+"aiogram==2.9.2" 
