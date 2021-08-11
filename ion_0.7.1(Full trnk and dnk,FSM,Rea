@@ -1,0 +1,191 @@
+[33mcommit 2432e728a0104eb4f77b16df702e6bf01c5f8b71[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: keepe <vosetru@gmail.com>
+Date:   Tue Jun 29 01:20:46 2021 +0300
+
+    bio_version_0.7.1(Full trnk and dnk,FSM,Read)
+
+[33mcommit 960147b24ca8743caf6b40e5e5a2a103d8213d49[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Keepe1 <82778359+Keepe1@users.noreply.github.com>
+Date:   Tue Jun 29 01:11:28 2021 +0300
+
+    Update README.md
+
+[33mcommit d5462abff5918f79c85bfad65e3f3d721c3774f8[m
+Author: keepe <vosetru@gmail.com>
+Date:   Tue Jun 29 01:04:33 2021 +0300
+
+    bio_version_0.7(full trnk and dnk, FSM)
+
+[33mcommit 454a67a2d9c0ae8b7d57d161ad018152aa233735[m
+Author: keepe <vosetru@gmail.com>
+Date:   Tue May 25 22:17:29 2021 +0300
+
+    bio_version_0.6.6
+
+[33mcommit bc12955941dca1d1b5e9fe2102a5db5e016f0641[m[33m ([m[1;31morigin/bio[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 26 23:59:40 2021 +0300
+
+    bio_version_0.6.6(working DNK, tRNK)
+
+[33mcommit 868a69fcca796be9125f63510ec8fa2873d51ddd[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 26 22:58:14 2021 +0300
+
+    bio_version_0.6.6(working DNK, but duplicate answer)
+
+[33mcommit bf694ddf2e47df3d65d3df521065bfc069cfd1b7[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 26 21:52:50 2021 +0300
+
+    bio_version_0.6.5(new work space for bot, button menu )
+
+[33mcommit c2181e89d11a89a9c214cf1ca5a6e2e42f221ce7[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sun Apr 25 19:43:49 2021 +0300
+
+    bio_version_0.6(new work space for bot, button menu )
+
+[33mcommit 82563f6422a4aca49f2f6ed8a9bccbd015075a4e[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sun Apr 25 01:00:17 2021 +0300
+
+    bio_version_0.5(it's start jobs for bot tg)
+
+[33mcommit 650e4a8e906b9a3749adb1f3f6f8363fd1bb7c00[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sat Apr 24 21:05:25 2021 +0300
+
+    bio_version_0.4.1(trnk working,dnk working, acid working)
+
+[33mcommit 2e936191d65dbd91fd8f59d39eb3508d28117157[m
+Author: keepe <vosetru@gmail.com>
+Date:   Tue Apr 20 17:27:56 2021 +0300
+
+    bio_version_0.4.1(trnk working,dnk working, acid working)
+
+[33mcommit 5a3d7858bbd5e525dc34a5e8ee520e9ddb861d4a[m
+Author: Keepe1 <82778359+Keepe1@users.noreply.github.com>
+Date:   Tue Apr 20 11:28:16 2021 +0300
+
+    Update Bio.py
+
+[33mcommit 4130640ba48326cb0f94f75401878bf5703986b9[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 19 23:15:32 2021 +0300
+
+    bio_version_0.4(acid working)
+
+[33mcommit eba098219bd2868a862270e26365783e4a408989[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 19 23:07:11 2021 +0300
+
+    bio_version_0.3.9(test)
+
+[33mcommit e404567730281d40e4ca30e30444229465a1d705[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 19 22:56:37 2021 +0300
+
+    bio_version_0.3.8(finish def AMIN)
+
+[33mcommit 70865824504f1bcac39ea3bd5fae8c20e2b26205[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 19 22:36:04 2021 +0300
+
+    bio_version_0.3.7
+
+[33mcommit c06f6b6bf64b9972367f27430ba483fff50d59b1[m[33m ([m[1;31morigin/hgh[m[33m, [m[1;32mhgh[m[33m, [m[1;32md[m[33m)[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sun Apr 18 01:27:38 2021 +0300
+
+    bio_version_0.3.6
+
+[33mcommit 60e3ae7b9319a34c85f455103250717db7142511[m
+Author: Keepe1 <82778359+Keepe1@users.noreply.github.com>
+Date:   Sun Apr 18 23:34:57 2021 +0300
+
+    Create README.md
+
+[33mcommit 2a0d1b652b154d60ee6bf2361fb6dfddd1337ebb[m
+Author: Keepe1 <82778359+Keepe1@users.noreply.github.com>
+Date:   Sun Apr 18 23:15:57 2021 +0300
+
+    Update Bio.py
+
+[33mcommit a3123bf6fbd57fe3f9d949331107a8ae3c07cb50[m
+Author: Keepe1 <82778359+Keepe1@users.noreply.github.com>
+Date:   Sun Apr 18 23:05:14 2021 +0300
+
+    Delete save.py
+
+[33mcommit 293dca2b48c866c3e8afbfb68f0c7debd5f3d1ed[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sun Apr 18 01:27:38 2021 +0300
+
+    bio_version_0.3.5
+
+[33mcommit 6d717d9fd856841034de191823148dd7d4400890[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sun Apr 18 01:02:50 2021 +0300
+
+    bio_version_0.3
+
+[33mcommit 5aab8f03be90b7542dadff5be1e353bd0c585ba3[m
+Author: keepe <vosetru@gmail.com>
+Date:   Thu Apr 15 23:33:28 2021 +0300
+
+    bio_version_0.3
+
+[33mcommit 37328ebf3ed8beb40002479243098ff10c20b809[m
+Author: keepe <vosetru@gmail.com>
+Date:   Wed Apr 14 21:17:45 2021 +0300
+
+    bio_version_0.2
+
+[33mcommit ad8e9d20f8e20092bb40f90039c3aac94078ad65[m[33m ([m[1;31morigin/ghg[m[33m, [m[1;32mghg[m[33m)[m
+Author: keepe <vosetru@gmail.com>
+Date:   Wed Apr 14 21:03:59 2021 +0300
+
+    bio_version_0.1
+
+[33mcommit 058c07f44d25c1bfdcc56113d0632bad14ad2a39[m
+Author: keepe <vosetru@gmail.com>
+Date:   Mon Apr 12 01:35:30 2021 +0300
+
+    save_shutil_version_0.2
+
+[33mcommit 0a996da55dba18eeec1f7b4fa666e1fd44c27154[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sun Apr 11 00:23:20 2021 +0300
+
+    version_0.2
+
+[33mcommit 54738f84fb7d4761daa7c04bc0801c82b627eda2[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sat Apr 10 18:41:36 2021 +0300
+
+    version_0.1
+
+[33mcommit 1d736350e56f357a49180cfff90a1e1bfa0c6820[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sat Apr 10 10:53:57 2021 +0300
+
+    version 1
+
+[33mcommit 2eb3b5dec970eb98c7e416c79bdce6e104d3ffe3[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sat Apr 10 10:43:52 2021 +0300
+
+    gyl
+
+[33mcommit ee1bd4dcb6d905353b91fca654614d7e86a943d6[m
+Author: keepe <vosetru@gmail.com>
+Date:   Sat Apr 10 10:37:11 2021 +0300
+
+    gel
+
+[33mcommit 566aac55fd53544ab38d7316af274a36e28ca326[m
+Author: keepe <vosetru@gmail.com>
+Date:   Fri Apr 9 23:40:32 2021 +0300
+
+    09.04_studing_git
