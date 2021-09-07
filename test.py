@@ -1,5 +1,5 @@
 def task(a):
-
+    #длиный перевод списков приводящий их к нужному состоянию для дальнейшей обработки  
     raw_data = list((a).split(" "))
 
 
@@ -16,7 +16,7 @@ def task(a):
     man_two_gen = list(set(list((man_two_gen_str).split(":"))))
     wom_two_gen = list(set(list((wom_two_gen_str).split(":"))))
     
-
+    #проверка на то чья цепочка генов длинее
     if len(man_two_gen) >= len(wom_two_gen):
         many_gen = (man_two_gen)
         few_gen = (wom_two_gen)
@@ -28,17 +28,19 @@ def task(a):
 
     #print("many {0}".format(many_gen))
 
-    verified_gen = []
+    verified_gen = []#список в который выходит отсортированый список (в формате AaBb)
 
+    #Алгоритм для сортировки (в формате AaBb)
     for i in (many_gen):
         for x in (few_gen):
+            #промежуточные списки
             sort_a = []
             sort_b = []
             sort_list = []
 
         
 
-
+            #перевод списков приводящий их к нужному состоянию для дальнейшей обработки  
             i = list(i)
             x = list(x)
 
@@ -51,11 +53,11 @@ def task(a):
             sort_b.append(str(i[1]))
             sort_b.append(str(x[1]))
             
-
+            #промежуточные списки
             a=[]
             A=[]
             
-
+            #Сортировка по велечине первой буквы 
             for y in sort_a:
                 if y == 'A':
                     A.append('A')
@@ -65,10 +67,11 @@ def task(a):
             sort_list.append(''.join(A))
             sort_list.append(''.join(a))
 
+            #промежуточные списки
             b=[]
             B=[]
         
-
+            #Сортировка по велечине первой буквы 
             for c in sort_b:
                 if c == 'B':
                     B.append('B')
@@ -84,9 +87,11 @@ def task(a):
             
     #print(verified_gen)
 
-
+    #промежуточные списки
     counted_gen = []
 
+
+    #обработка в ходе кторой дубликаты складываються 
     for i in verified_gen:
         repeat_gen = []
 
@@ -106,6 +111,8 @@ def task(a):
 
 
     counted_set_gen = ':'.join(set(counted_gen))
+
+    #финальный список
     x = ('Варианты генотипов первого поколения: {0}'.format(counted_set_gen))
     #print(counted_set_gen)
     return x
