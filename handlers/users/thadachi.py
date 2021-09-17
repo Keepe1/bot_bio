@@ -20,11 +20,5 @@ async def answer_f1(message: Message, state: FSMContext):
 
     await state.update_data(answer1 = answer)
     await tvubor.next()
-
-@dp.message_handler(state=tvubor.F2)
-async def show(message: Message, state: FSMContext):
-    chain = message.text
-    data = await state.get_data()
-    answer1 = data.get("answer1")
-    await message.answer(':)')
     await state.finish()
+
